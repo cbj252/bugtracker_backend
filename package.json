@@ -1,0 +1,34 @@
+{
+  "name": "bug-tracker-backend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "devstart": "nodemon app.js",
+    "test": "jest test",
+    "test_handles": "jest test --runInBand --detectOpenHandles"
+  },
+  "dependencies": {
+    "@socket.io/admin-ui": "^0.5.1",
+    "bcrypt": "^5.1.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "~1.4.6",
+    "cors": "^2.8.5",
+    "debug": "~4.3.4",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "helmet": "^6.0.1",
+    "http-errors": "~2.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "~1.10.0",
+    "pg": "^8.8.0",
+    "pug": "^3.0.2",
+    "socket.io": "^4.7.1"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1",
+    "nodemon": "^2.0.20",
+    "supertest": "^6.3.3"
+  }
+}
