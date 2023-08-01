@@ -3,8 +3,8 @@
 This is a bug tracker that helps users to monitor bugs, using the standard tickets system, where bugs are represented as tickets to be handled.
 It was created as a pair project with Li Yifei.
 
-The frontend can be found [here](https://github.com/cbj252/bugtracker/tree/main)
-The website hosting this code can be found [here](https://bugtrackerplus.vercel.app/)
+The frontend can be found [here](https://github.com/cbj252/bugtracker/tree/main).
+The website hosting this code can be found [here](https://bugtrackerplus.vercel.app/).
 
 # Features
 
