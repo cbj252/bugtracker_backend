@@ -1,10 +1,10 @@
 # Bug Tracker Website (Backend)
 
 This is a bug tracker that helps users to monitor bugs, using the standard tickets system, where bugs are represented as tickets to be handled.
-It was created as a pair project with [Li Yifei]().
+It was created as a pair project with Li Yifei.
 
-The frontend can be found [here]()
-The website hosting this code can be found [here]()
+The frontend can be found [here](https://github.com/cbj252/bugtracker/tree/main)
+The website hosting this code can be found [here](https://bugtrackerplus.vercel.app/)
 
 # Features
 
@@ -26,8 +26,8 @@ For logged in users:
 # Project Structure & Reasoning
 
 - Backend is separated into various routes, depending on the type of data the route is handling. For example, the /projects route includes all requests regarding projects. Each route is linked to a controller that handles all requests to that route and returns the appropriate data.
-- Tests are done on a per-controller basis, with each controller getting a file that contains all tests involving it. This structure allows for easy testing of only one controller at a time. Given the small size of the project, all tests are usually [run regardless](), but it proved to be useful when bug fixing to reduce the amount of unnecessary testing done.
-- Notifications are done via the backend sending a request to the frontend to display the notification. Doing so leaves the design of the notification entirely within the frontend, separating concerns. [Frontend Code]() [Backend Code]()
+- Tests are done on a per-controller basis, with each controller getting a file that contains all tests involving it. This structure allows for easy testing of only one controller at a time. Given the small size of the project, all tests are usually [run regardless](https://github.com/cbj252/bugtracker_backend/blob/main/tests/testStarter.test.js), but it proved to be useful when bug fixing to reduce the amount of unnecessary testing done.
+- Notifications are done via the backend sending a request to the frontend to display the notification. Doing so leaves the design of the notification entirely within the frontend, separating concerns. [Frontend Code](https://github.com/cbj252/bugtracker/blob/main/src/socket.js#L33) [Backend Code](https://github.com/cbj252/bugtracker_backend/blob/main/controllers/ticketController.js#L118)
 
 # What I would do if I had more time
 
