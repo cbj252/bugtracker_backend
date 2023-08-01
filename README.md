@@ -27,7 +27,7 @@ For logged in users:
 
 - Backend is separated into various routes, depending on the type of data the route is handling. For example, the /projects route includes all requests regarding projects. Each route is linked to a controller that handles all requests to that route and returns the appropriate data.
 - Tests are done on a per-controller basis, with each controller getting a file that contains all tests involving it. This structure allows for easy testing of only one controller at a time. Given the small size of the project, all tests are usually [run regardless](https://github.com/cbj252/bugtracker_backend/blob/main/tests/testStarter.test.js), but it proved to be useful when bug fixing to reduce the amount of unnecessary testing done.
-- Notifications are done via the backend sending a request to the frontend to display the notification. Doing so leaves the design of the notification entirely within the frontend, separating concerns. [Frontend Code](https://github.com/cbj252/bugtracker/blob/main/src/socket.js#L33) [Backend Code](https://github.com/cbj252/bugtracker_backend/blob/main/controllers/ticketController.js#L118)
+- Notifications are done via the backend sending a request to the frontend to display the notification. Doing so leaves the design of the notification entirely within the frontend, separating concerns. [Frontend Code](https://github.com/cbj252/bugtracker/blob/main/src/socket.js#L33), [Backend Code](https://github.com/cbj252/bugtracker_backend/blob/main/controllers/ticketController.js#L118)
 
 # What I would do if I had more time
 
@@ -38,10 +38,10 @@ For logged in users:
 
 In the main directory, run:
 
-`npm run start` - Frontend & Bakcend
+`npm run start` - Frontend & Backend:
 Runs the website in a development server.
 The program requires .env variables to run correctly.
 
-`npm run devstart` - Backend only
+`npm run devstart` - Backend only:
 Uses nodemon to run the website everytime a change is detected in the file directory.
 The program requires .env variables to connect the backend to a database.
